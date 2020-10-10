@@ -1,13 +1,46 @@
+
+
+
+
+
         const button = document.getElementById('btnButton');
-        const firstName = document.getElementById('firstName');     // ini untuk mengambil firstName
+        const firstName = document.getElementById('first-name');     // ini untuk mengambil firstName
         const lastName = document.getElementById('lastName');     
         const city = document.getElementById('city');     
         const zipCode = document.getElementById('zipCode');     
         const check = document.getElementById('check');     
         button.addEventListener('click',function () {
-        console.log(getFormData())
+            validateFormData()
+            if (validateFormData() == true) {
+                console.log('berhasil')
+                return true;
+            }else{
+                return false;
+            }
         })
 
+
+        let validateFormData = () =>{
+                if (getFormData().firstName != '' && getFormData().lastName != ''&& getFormData().city != '') {
+                    if (typeof getFormData().zipCode != "number") {
+                        if (isLength(getFormData().zipCode , 5) == true) {
+                            if (checkBoxIsChecked() === true) {
+                                return true;
+                            }    else{
+                                return false;
+                            }
+                        }else{
+                            return false;
+                        }
+                        
+                    }else{
+                    return false;
+                    }
+                }else{
+                    return false;
+                }
+
+        }
 
         function getFormData() {
             var ambilNama = {
@@ -19,7 +52,6 @@
             }
             return ambilNama;
         }
-
         let angka = "sayaHendra";
         
         let isNumber = (string) => {
@@ -29,13 +61,8 @@
                 return false;
             }
         }
-        console.log( "tipe data dari variable angka adalah "+
-                        typeof angka+
-                         " jadi nilai dari angka adalah "+
-                        isNumber(angka));
 
 
-        
         let isLength = (string, integer) => {
             if (typeof integer == "number") {
                 if(string.length == integer){
@@ -47,7 +74,18 @@
                 console.log("gagal");
             }
         }
-        console.log(isLength("botol",5));
+
+
+        let checkBoxIsChecked = ()=>{
+            if (check.checked) {
+                return true
+            }else{
+                return false  
+            }
+
+        }
+
+        
 
 
 
