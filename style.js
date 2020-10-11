@@ -3,40 +3,46 @@
 
 
 
-        const button = document.getElementById('btnButton');
+        // const button = document.getElementById('btnButton');
         const firstName = document.getElementById('first-name');     // ini untuk mengambil firstName
         const lastName = document.getElementById('lastName');     
         const city = document.getElementById('city');     
         const zipCode = document.getElementById('zipCode');     
         const check = document.getElementById('check');     
-        button.addEventListener('click',function () {
-            validateFormData()
-            if (validateFormData() == true) {
-                console.log('berhasil')
-                return true;
-            }else{
-                return false;
-            }
-        })
+        const warning = document.getElementById('warning');
 
 
-        let validateFormData = () =>{
-                if (getFormData().firstName != '' && getFormData().lastName != ''&& getFormData().city != '') {
-                    if (typeof getFormData().zipCode != "number") {
-                        if (isLength(getFormData().zipCode , 5) == true) {
+        let resetForm = () => {
+            firstName.value = '';
+            lastName.value = '';
+            city.value = '';
+            zipCode.value = '';
+            check.checked = false;
+        }
+
+        let validateFormData = (e) =>{
+            e = getFormData()
+                if (firstName.value != '' && lastName.value != '' && city.value != '') {
+                    if (typeof zipCode.value != "number") {
+                        if (isLength(zipCode.value , 5) == true) {
                             if (checkBoxIsChecked() === true) {
-                                return true;
+                                warning.innerHTML = '';
+                                return true;                                
                             }    else{
+                                warning.innerHTML = '<font color="#FF00000"> periksa form anda sekali lagi </font>';
                                 return false;
                             }
                         }else{
+                            warning.innerHTML = '<font color="#FF00000"> periksa form anda sekali lagi </font>';
                             return false;
                         }
                         
                     }else{
-                    return false;
+                        warning.innerHTML = '<font color="#FF00000"> periksa form anda sekali lagi </font>';
+                        return false;
                     }
                 }else{
+                    warning.innerHTML = '<font color="#FF00000"> periksa form anda sekali lagi </font>';
                     return false;
                 }
 

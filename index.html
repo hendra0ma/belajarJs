@@ -5,18 +5,25 @@
 </head>
 <body>
     <div>
-        <input type="text" name="nama"id="first-name"placeholder="nama depan"><br>
-        <input type="text" name="nama"id="lastName"placeholder="nama belakang"> <br>
-        <input type="text" name="nama"id="city"placeholder="city"><br>
-        <input type="checkbox" name="check"  id="check"value="helm">helm<br>
-        <input type="text" name="nama"id="zipCode"placeholder="zipCode"><br>        
-        <input id="btnButton" type="submit" value="Click me"/>
+        <div id="warning">
+
+        </div>
+        <form action=""method="post"onSubmit="return validateFormData()">
+            <input type="text" name="nama"id="first-name"placeholder="nama depan"><br>
+            <input type="text" name="nama"id="lastName"placeholder="nama belakang"> <br>
+            <input type="text" name="nama"id="city"placeholder="city"><br>
+            <input type="checkbox" name="check"  id="check"value="helm">helm<br>
+            <input type="text" name="nama"id="zipCode"placeholder="zipCode"><br>        
+            <input id="btnButton" type="submit"value="submit"/>
+            <input id="btnButton" type="button" value="reset"onClick="resetForm()"/>
+        </form>
     </div>
     <div id="container">
 
     </div>
 
 
+   
 
     
     <script src="style.js">
