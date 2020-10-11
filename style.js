@@ -5,9 +5,9 @@
 
         // const button = document.getElementById('btnButton');
         const firstName = document.getElementById('first-name');     // ini untuk mengambil firstName
-        const lastName = document.getElementById('lastName');     
+        const lastName = document.getElementById('last-name');     
         const city = document.getElementById('city');     
-        const zipCode = document.getElementById('zipCode');     
+        const zipCode = document.getElementById('zip-code');     
         const check = document.getElementById('check');     
         const warning = document.getElementById('warning');
 
@@ -20,8 +20,8 @@
             check.checked = false;
         }
 
-        let validateFormData = (e) =>{
-            e = getFormData()
+        let validateFormData = (e = getFormData()) =>{
+            
                 if (firstName.value != '' && lastName.value != '' && city.value != '') {
                     if (typeof zipCode.value != "number") {
                         if (isLength(zipCode.value , 5) == true) {
@@ -54,7 +54,7 @@
                 lastName : lastName.value,
                 city : city.value,
                 zipCode : zipCode.value,
-                check : check.value,
+                check : check.checked,
             }
             return ambilNama;
         }
