@@ -4,6 +4,26 @@
   margin: 0;
   padding: 0;
 }
+p {
+  text-indent: 10px;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dcf8c6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #25d366;
+  border-radius: 20px;
+}
+
+/* akhir scroll bar */
+
 /* Pembuatan navigasi */
 nav {
   z-index: 1;
@@ -11,7 +31,7 @@ nav {
   height: 80px;
   margin: auto;
   text-align: center;
-  width: 100%;
+  width: auto;
   font-family: "Roboto Mono", monospace;
 }
 
@@ -21,7 +41,7 @@ nav ul {
   list-style: none;
   position: relative;
   display: inline-table;
-  width: 100%;
+  width: auto;
 }
 nav ul li {
   display: inline;
@@ -70,6 +90,7 @@ nav h1 {
   width: fixed;
   height: 500px;
   border-radius: 10px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 }
 .text-jumbotron {
   margin-top: -300px;
@@ -80,7 +101,7 @@ nav h1 {
   padding: 4px;
 }
 
-p {
+.paragraf p {
   display: block;
   width: 50%;
 }
@@ -153,4 +174,79 @@ h1 {
   color: #343a40 !important;
   font-family: "Roboto Mono", monospace;
 }
+.paragraf h2 {
+  display: inline;
+  border-bottom: 2px solid #343a40;
+}
 /* Akhir Kotak Pesan Nama dan Gambar Wajah */
+
+/* Start Body */
+
+.main {
+  margin: 10;
+  padding: 50;
+  margin-top: 40px;
+  width: auto;
+  height: auto;
+  background-color: #f8f9fa;
+  border-radius: 7px;
+  overflow: auto;
+  /* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.section1 {
+  /* border-radius: 7px; */
+  width: auto;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  display: block;
+  float: left;
+  width: 49%;
+  /* background-color: #25d366; */
+  /* background-color: #075e54; */
+  border-right: 3px solid #075e54;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.section1 p {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+.img401 {
+  width: 35%;
+
+  margin-right: 20px;
+  border-radius: 5px;
+  float: left;
+}
+.section2 {
+  /* border-radius: 7px; */
+
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  display: block;
+  width: 49%;
+  float: right;
+  /* background-color: #25d366; */
+  /* background-color: #075e54; */
+  border-left: 3px solid #075e54;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.section2 p {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.img402 {
+  width: 35%;
+
+  border-radius: 5px;
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
