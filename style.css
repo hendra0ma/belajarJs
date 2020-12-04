@@ -250,3 +250,10 @@ h1 {
 .clear {
   clear: both;
 }
+
+
+
+table{
+    padding: 20px;
+    margin-top: 10px;
+}

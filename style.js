@@ -1,3 +1,5 @@
+/* COPYRIGTH © 2020 Hendra Maulidan */
+
 let teksHead = document.getElementById("teks");
 let h1 = document.querySelector("nav ul li h1");
 
