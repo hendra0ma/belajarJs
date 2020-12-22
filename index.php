@@ -7,10 +7,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="pemerintah.css" />
   </head>
-<!--   <nav>
+  <nav>
     <div class="container">
       <ul>
         <li>
@@ -33,7 +33,9 @@
     </div>
   </nav>
 
-  <div class="jumbotron"></div>
+  <div class="jumbotron">
+    <div class="bg-jumbotron"></div>
+  </div>
   <center>
     <div class="text-jumbotron">
       <h1 class="h1head" id="teks">
@@ -51,9 +53,8 @@
     <div class="kotak-kecil"></div>
     <div class="paragraf">
       <h2>My Profile</h2>
-      <p>
-        &nbsp;&nbsp;Hello my name is hendra,i am a programmer and website
-        designer . I live in the city of jakarta
+      <p class="introduce">
+        &nbsp;&nbsp;Halo nama saya Hendra Maulidan , saya sudah hidup sekitar 17 tahun , dan sebentar lagi saya ulang tahun ,saya mengharapkan hadiah dari kalian , terimakasih
       </p>
     </div>
   </div>
@@ -73,15 +74,11 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
       </p>
     </div>
+    <div class="clear"></div>
+    <div class="sectionContainer">
+    </div>
   </main>
- -->
-
-
-
-
   
-
-
   <body>
     <script src="style.js"></script>
   </body>
