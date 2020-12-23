@@ -10,28 +10,32 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="pemerintah.css" />
   </head>
-  <nav>
-    <div class="container">
-      <ul>
-        <li>
-          <h1>0 : 0 : 0</h1>
-        </li>
-        <li>
-          <a href="#">Home</a>
-        </li>
+  <body onscroll="scroll()">
+ 
+      <nav>
+        <div class="container">
+          <ul>
+            <li>
+              <h1>0 : 0 : 0</h1>
+            </li>
+            <li>
+              <a href="#">Home</a>
+            </li>
+    
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Gallery</a>
+            </li>
+            <li>
+              <a href="#">Features</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
 
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Gallery</a>
-        </li>
-        <li>
-          <a href="#">Features</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
   <div class="jumbotron">
     <div class="bg-jumbotron"></div>
@@ -79,7 +83,7 @@
     </div>
   </main>
   
-  <body>
+ 
     <script src="style.js"></script>
   </body>
 </html>

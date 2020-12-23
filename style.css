@@ -31,17 +31,23 @@ nav {
   height: 80px;
   margin: auto;
   text-align: center;
-  width: auto;
+  width: 100%;
+  position: fixed; 
+  overflow: hidden;
+  top: 0; 
+  z-index: 99999;
+  transition: 0.4s;
   font-family: "Roboto Mono", monospace;
 }
 
 nav ul {
   margin-top: 20px;
   padding: 5 20px;
+  
   list-style: none;
-  position: relative;
-  display: inline-table;
-  width: auto;
+ 
+  /* display: inline-table; */
+  width: 0 auto;
 }
 nav ul li {
   display: inline;
@@ -69,6 +75,8 @@ nav h1 {
   font-family: "Roboto Mono", monospace;
   color: #075e54;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #25d366;
+  border-radius: 10px;
+  transition: 0.4s;
 }
 
 /* Akhir Dari Navigasi */
