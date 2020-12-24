@@ -1,7 +1,7 @@
 <html>
   <head>
     <!-- /* COPYRIGHT © 2020 Hendra Maulidan */ -->
-    <title>The charity</title>
+    <title>Hendra Maulidan</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"

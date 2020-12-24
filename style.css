@@ -223,7 +223,7 @@ h1 {
 
 .main {
   margin: 10;
-  padding: 50;
+  padding: 50px;
   margin-top: 40px;
   width: auto;
   height: auto;
@@ -231,6 +231,18 @@ h1 {
   border-radius: 7px;
   overflow: auto;
   /* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19); */
+  animation-name: main;
+  animation-duration: 2s;
+}
+@keyframes main{
+  0%{
+    margin-top: 80px;
+    padding: 0px;
+  }
+  100%{
+    padding: 50px;
+    margin-top: 40px;
+  }
 }
 
 .section1 {
@@ -304,7 +316,7 @@ table{
   /* background-color: #075e54; */
   border-radius: 5px;
   /* border: 5px solid  #f8f9fa; */
-  height: 100000px;
+  height: fit-content;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 }
 .main-container{
