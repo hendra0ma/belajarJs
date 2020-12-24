@@ -11,13 +11,20 @@ introduce.innerHTML = "";
 typeWriter();
 
 function scroll() {
-  if (document.body.scrollTop > 200) {
-    navbar.style.backgroundColor = "#25d366";
+  if (document.body.scrollTop > 300) {
+    navbar.style.backgroundColor = "rgba(3, 129, 5, 0.71)";
     h1.style.backgroundColor = "#FFF";
-    
-  }else if (document.body.scrollTop < 200) {
+    navbar.style.position = "fixed";
+    navbar.style.top = 0;
+    navbar.style.zIndex = 99990;
+
+  }else if (document.body.scrollTop < 300) {
+    navbar.style.transition = 0.5;
     navbar.style.backgroundColor = "";
     h1.style.backgroundColor = "";
+    navbar.style.position = "";
+    // navbar.style.top = 0;
+    
   }{
 
   }
@@ -31,6 +38,8 @@ function typeWriter() {
 }
 
 
+
+
 setInterval(function() {
   let waktu = new Date();
   h1.innerHTML =
@@ -40,7 +49,7 @@ setInterval(function() {
 setInterval(function() {
   if (teksHead.innerHTML == "Join Us To Find <b> Another Stuff</b>") {
     teksHead.innerHTML = "Follow Us For The<b> Best Experience</b>";
-    
+    teksHead.style.width = "auto";
   } else {
     teksHead.innerHTML = "Join Us To Find <b> Another Stuff</b>";
     

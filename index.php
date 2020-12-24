@@ -1,6 +1,6 @@
 <html>
   <head>
-    <!-- /* COPYRIGTH © 2020 Hendra Maulidan */ -->
+    <!-- /* COPYRIGHT © 2020 Hendra Maulidan */ -->
     <title>The charity</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -34,9 +34,6 @@
           </ul>
         </div>
       </nav>
-    
-
-
   <div class="jumbotron">
     <div class="bg-jumbotron"></div>
   </div>
@@ -80,10 +77,15 @@
     </div>
     <div class="clear"></div>
     <div class="sectionContainer">
-    </div>
-  </main>
-  
+      <div class="main-container">
+        <img src="image/resize.jpg" class="img401" />
+        <div class="clear"></div>
+      </div>
  
+    </div>
+ 
+  </main>
+
     <script src="style.js"></script>
   </body>
 </html>

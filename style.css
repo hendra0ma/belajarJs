@@ -1,4 +1,5 @@
-/* COPYRIGTH © 2020 Hendra Maulidan */
+/* COPYRIGHT © 2020 Hendra Maulidan */
+
 
 * {
   margin: 0;
@@ -26,13 +27,13 @@ p {
 
 /* Pembuatan navigasi */
 nav {
-  z-index: 1;
+  
   position: relative;
   height: 80px;
   margin: auto;
   text-align: center;
   width: 100%;
-  position: fixed; 
+  /* position: fixed;  */
   overflow: hidden;
   top: 0; 
   z-index: 99999;
@@ -43,7 +44,7 @@ nav {
 nav ul {
   margin-top: 20px;
   padding: 5 20px;
-  
+  transition: 0.4s;
   list-style: none;
  
   /* display: inline-table; */
@@ -55,18 +56,22 @@ nav ul li {
   margin-left: 20;
   float: left;
   text-transform: uppercase;
+  transition: 0.4s;
 }
 nav ul li a {
   text-decoration: none;
   color: #dcf8c6;
   padding: 5px;
   font-size: 20px;
+  transition: 0.4s;
+  width: auto;
 }
 nav ul li a:hover {
   color: #25d366;
   border-bottom: 2px solid #25d366;
   border-radius: 10px;
   padding: 5px;
+  
 }
 nav h1 {
   position: inherit;
@@ -82,9 +87,12 @@ nav h1 {
 /* Akhir Dari Navigasi */
 
 .container {
-  margin-left: 30px;
-  margin-right: 30px;
+  width: auto;
+  /* padding: 50px; */
+  margin: 20px;
+
 }
+
 .mt-2 {
   margin-top: 20px;
 }
@@ -132,12 +140,14 @@ nav h1 {
   font-weight: 500;
   height: 40px;
   border-radius: 20px;
+
 }
 .btn-green:hover {
   color: #dcf8c6;
   background-color: transparent;
   border: 2px solid #dcf8c6;
   border-radius: 20px;
+  
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 30px 0 rgba(0, 0, 0, 0.19);
 }
 .btn-green:active {
@@ -160,6 +170,7 @@ h1 {
 .h1head {
   display: block;
   color: #dcf8c6;
+  transition:width 1s;
 }
 /* akhir desain teks judul */
 
@@ -174,6 +185,17 @@ h1 {
   margin: auto;
   margin-top: 110px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: kotak;
+  animation-duration: 2s;
+}
+@keyframes kotak{
+  0%{
+    margin-top: 10px;
+  }
+ 
+  100%{
+    margin-top: 110px;
+  }
 }
 .kotak-kecil {
   float: right;
@@ -275,12 +297,18 @@ table{
 .sectionContainer{
   
   display: block;
-  
+  position: relative;
   width: auto;
   margin-top: 70px;
   height: 300px;
   /* background-color: #075e54; */
   border-radius: 5px;
-  border: 5px solid  #f8f9fa;
+  /* border: 5px solid  #f8f9fa; */
+  height: fit-content;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.main-container{
+  width: auto;
+  padding: 30px;
+  margin: 20px;
 }
