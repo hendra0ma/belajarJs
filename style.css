@@ -324,3 +324,11 @@ table{
   padding: 30px;
   margin: 20px;
 }
+.grid-sistem{
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto auto;
+}
+.grid-sistem > div{
+  padding: 10px;
+}
